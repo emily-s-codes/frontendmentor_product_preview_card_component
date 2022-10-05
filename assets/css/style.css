@@ -1,0 +1,121 @@
+/* ==============================
+    general styling
+=============================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url("../fonts/Fraunces_9pt-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ==============================
+    main 
+=============================== */
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main section {
+    display: flex;
+    width: 40vw;
+    margin: 20vh 30vw;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+main img.product {
+    width: 20vw;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+main section article {
+    padding: 0.5vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main section article h1 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.4vw;
+}
+
+main section article h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+}
+
+main section article p {
+    font-family: 'Monserrat-Medium', sans-serif;
+}
+
+main section article p.p__blurb {
+    color: hsl(228, 12%, 48%);
+    font-size: 1.2rem;
+    line-height: 2.5vh;
+}
+
+main section article div {
+    display: flex;
+    align-items: center;
+}
+
+main section article div h2 {
+    padding-right: 2vw;
+    color: hsl(158, 36%, 37%);
+}
+
+main section article div p.p__oldprice {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 1.2rem;
+}
+
+main section article p.p__button {
+    font-family: 'Montserrat-Bold', sans-serif;
+    padding: 1.5vh 4.5vw;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+main section article p.p__button img {
+    margin-right: 1vw;
+}
